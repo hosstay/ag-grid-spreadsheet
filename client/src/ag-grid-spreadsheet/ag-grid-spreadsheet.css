@@ -1,0 +1,273 @@
+/* ag-grid styling */
+
+.filter {
+  margin: 2px
+}
+
+.dd {
+  width: 30px
+}
+
+.mm {
+  width: 30px
+}
+
+.yyyy {
+  width: 60px
+}
+
+.reset {
+  padding: 2px;
+  background-color: red;
+  border-radius: 3px;
+  font-size: 10px;
+  margin-right: 5px;
+  color: white
+}
+
+.customHeaderLabel {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 13px;
+  white-space: normal;
+}
+
+.customHeaderMenuButton {
+  position: relative;
+  left: 90px;
+}
+
+.customExpandLabel {
+  margin-left: 6px;
+  margin-top: 6px;
+  display: "block";
+}
+
+.customCompressLabel {
+  margin-left: 6px;
+  margin-top: 6px;
+  display: "none";
+}
+
+.active {
+  color: cornflowerblue;
+}
+
+.ag-theme-balham .ag-cell-focus {
+  border: 1px solid #7CFC00 !important;
+  box-shadow: inset 0 0 0 100px rgba(147, 147, 147, 0.3);
+}
+
+.ag-theme-balham .ag-cell-range-selected-1:not(.ag-cell-focus) {
+  box-shadow: inset 0 0 0 100px rgba(147, 147, 147, 0.3);
+}
+
+.ag-theme-balham .ag-cell-range-selected-2:not(.ag-cell-focus) {
+  box-shadow: inset 0 0 0 100px rgba(147, 147, 147, 0.5);
+}
+
+.ag-theme-balham .ag-cell-range-selected-3:not(.ag-cell-focus) {
+  box-shadow: inset 0 0 0 100px rgba(147, 147, 147, 0.6);
+}
+
+.ag-theme-balham .ag-cell-range-selected-4:not(.ag-cell-focus) {
+  box-shadow: inset 0 0 0 100px rgba(147, 147, 147, 0.7);
+}
+
+.ag-theme-balham ::-webkit-scrollbar {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.ag-theme-balham ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 .0rem rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 .0rem rgba(0,0,0,0.3);
+  background: #f4f4f4;
+}
+
+.ag-theme-balham ::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 .6rem rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 0 .6rem rgba(0,0,0,0.5);
+}
+
+/* Turn on single button up on top, and down on bottom */
+::-webkit-scrollbar-button:end:increment,
+::-webkit-scrollbar-button:start:decrement{
+  display: block;
+}
+
+/* Place The scroll down button at the bottom */
+::-webkit-scrollbar-button {
+  box-shadow: inset 0 0 .6rem rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 0 .6rem rgba(0,0,0,0.5);
+}
+
+/* HTML element styling */
+#tracking-view {
+  height: 89vh;
+}
+
+#sheet {
+  height: 82.75vh;
+}
+
+#header-bar {
+  height: 34px;
+  width: 100%;
+  margin-top: 0.6vh;
+}
+
+#main-header {
+  float: right;
+  margin-right: 0.3vw;
+}
+
+.header-item {
+  width: 34px;
+  height: 34px;
+  border: 1px solid lightslategrey;
+  border-radius: 3px;
+  margin: -2.3px;
+}
+
+.header-item img {
+  width: 1.3vw;
+  min-width: 22px;
+  height: 2.7vh;
+  min-height: 22px;
+  float: right;
+  color: black;
+  position: relative;
+  left: 0.15vw;
+}
+
+#ft-color-picker, #bg-color-picker, #bg-color-picker-2 {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  bottom: 0.2vh;
+}
+
+#main-header .text-box, .submit-button, #border-option-selector {
+  font-size: 16px;
+}
+
+#main-header .text-box {
+  max-width: 116px;
+  width: 5vw;
+  position: relative;
+  bottom: 0.6vh;
+}
+
+#main-header .submit-button {
+  min-width: 70px;
+  width: 4.5vw;
+  text-align: center;
+  margin-right: 5px;
+  position: relative;
+  bottom: 0.6vh;
+}
+
+.header-selected {
+  background-color: rgba(147, 147, 147, 0.3);
+}
+
+.vertical-flip {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#saved-snackbar {
+  visibility: hidden;
+  min-width: 14vw;
+  background-color: rgba(51, 51, 51, 0.90);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 1vw;
+  position: fixed;
+  z-index: 15;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+  bottom: 3vh;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#saved-snackbar.show {
+  visibility: visible;
+
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s;
+}
+
+#saved-snackbar.hide {
+  -webkit-animation: fadeout 0.5s 2.5s;
+  animation: fadeout 0.5s 2.5s;
+}
+
+#saved-snackbar.inflate {
+  bottom: 5%;
+  width: 96vw;
+  height: 85vh;
+  padding: 20vw;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+/* Click Blocker */
+#click-blocker {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+  position: fixed;
+  z-index: 10;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#click-blocker.show {
+  visibility: visible;
+}
+
+/* Formula Bar */
+#formula-bar {
+  width: 99%;
+  height: 3vh;
+  margin-left: 0.5%;
+  font-size: 18px;
+  resize: none;
+  overflow-y: hidden;
+}
+
+/* cellClass styles */
+.text-align-right {
+  text-align: right;
+}

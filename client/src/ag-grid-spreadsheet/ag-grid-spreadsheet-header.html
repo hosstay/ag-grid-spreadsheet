@@ -1,0 +1,45 @@
+<template>
+  <div id="main-header">
+    <input type="text" id="replace-cell-text-box" class="header-item non-style-buttons text-box" placeholder="Text..."/>
+    <button id="replace-cell-submit-button" class="header-item non-style-buttons submit-button" type="button">Replace</button>
+    <input type="text" id="search-cell-text-box" class="header-item non-style-buttons text-box" placeholder="Cell..."/>
+    <button id="search-cell-submit-button" class="header-item non-style-buttons submit-button" type="button">Search</button>
+    <input type="text" id="search-column-text-box" class="header-item non-style-buttons text-box" placeholder="Column..."/>
+    <button id="search-column-submit-button" class="header-item non-style-buttons submit-button" type="button">Search</button>
+    <input type="text" id="filter-text-box" class="header-item non-style-buttons text-box" placeholder="Filter..."/>
+    <button id="filter-submit-button" class="header-item non-style-buttons submit-button" type="button">Filter</button>
+    <button id="load-grid-button" title="Toggle Load All" class="header-item non-style-buttons" type="button">
+      <img id="load-img" src="./icons/load.png" alt="Load">
+    </button>
+    <button id="refresh-grid-button" title="Refresh (F5)" class="header-item non-style-buttons" type="button">
+      <img id="refresh-img" src="./icons/refresh.png" alt="Refresh">
+    </button>
+    <button id="undo-grid-button" title="Undo (Ctrl + Z)" class="header-item non-style-buttons" type="button">
+      <img id="undo.img" src="./icons/undo.png" alt="Undo">
+    </button>
+    <input type="color" id="bg-color-picker" class="header-item style-buttons" value="#ffffff" />
+    <button id="color-selected-cells-button" title="Fill (Ctrl + Shift + S)" class="header-item" type="button">
+      <img id="fill-img" src="./icons/fill.png" alt="Fill">
+    </button>
+    <input type="color" id="bg-color-picker-2" class="header-item style-buttons" value="#a6a6a6" />
+    <button id="color-selected-cells-button-2" title="Fill" class="header-item" type="button">
+      <img id="fill-img-2" src="./icons/fill.png" alt="Fill">
+    </button>
+    <input type="color" id="ft-color-picker" class="header-item style-buttons" value="#000000" />
+    <button id="color-selected-cells-font-button" class="header-item style-buttons" type="button">
+      <img id="font-img" src="./icons/font.png" alt="Change Font">
+    </button>
+    <button id="bold-button" class="header-item style-buttons" type="button">
+      <img id="bold-img" src="./icons/bold.png" alt="Toggle Bold">
+    </button>
+    <button id="border-button" class="header-item style-buttons" type="button">
+      <img id="border-img" src="./icons/border.png" alt="Toggle Border">
+    </button>
+    <button id="increase-decimal-button" class="header-item style-buttons" type="button">
+      <img id="increase-decimal-img" src="./icons/increase-decimal.png" alt="Increase Decimal">
+    </button>
+    <button id="decrease-decimal-button" class="header-item style-buttons" type="button">
+      <img id="decrease-decimal-img" src="./icons/decrease-decimal.png" alt="Decrease Decimal">
+    </button>
+  </div>
+</template>

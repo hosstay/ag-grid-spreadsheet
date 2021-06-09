@@ -1,0 +1,16 @@
+<template>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+  <require from="./ag-grid-spreadsheet.css"></require>
+  <require from="./styles/ag-theme-balham.css"></require>
+  <require from="./ag-grid-spreadsheet-header.html"></require>
+  <div id="tracking-view" class="col-lg-offset-0 col-lg-12 vspace40">
+    <div id="sheet" class="row popout-nopad text-left" style="margin-left: 0vw;">
+      <div id="header-bar">
+        <ag-grid-spreadsheet-header></ag-grid-spreadsheet-header>
+      </div>
+      <div id="ag-grid-spreadsheet" style="width: 99.5%; height: 92%; padding-left: 0.5%;" class="ag-theme-balham"></div>
+      <div id="saved-snackbar"></div>
+      <div id="click-blocker"></div>
+    </div>
+  </div>
+</template>
