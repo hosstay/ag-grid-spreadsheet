@@ -9,7 +9,9 @@ Caution: There's a good amount of small bugs and a few bits of half-working func
 ### Prerequisites
 
 Must have installed agGrid into your project (TODO: Get html script version to work so no packages needed)
+
 npm install ag-grid-community
+
 npm install ag-grid-enterprise
 
 ### Database
